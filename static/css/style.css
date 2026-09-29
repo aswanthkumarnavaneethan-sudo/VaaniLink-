@@ -1,0 +1,129 @@
+/* VaaniLink Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.message-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Error Pages Specific */
+.error-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.error-container h1 {
+    font-size: 6rem;
+    color: #e74c3c;
+    margin: 0;
+}
+
+.error-container h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Messages List */
+#messages-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#messages-list li {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #4CAF50;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.original-text {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.translated-text {
+    font-size: 1.1em;
+    color: #2c3e50;
+    font-weight: 500;
+}

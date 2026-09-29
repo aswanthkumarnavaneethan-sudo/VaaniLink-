@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaaniLink - Connect</title>
+    <!-- Use relative path for static files -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>VaaniLink</h1>
+            <p>Speak in your language. Connect in theirs.</p>
+        </div>
+    </header>
+    <main class="container">
+        <section id="chat-container">
+            <h2>Welcome to VaaniLink</h2>
+            <p>This is a simple interface demonstrating the translation capability.</p>
+            
+            <div class="message-box">
+                <textarea id="message-input" placeholder="Type your message here..."></textarea>
+                <div class="controls">
+                    <select id="source-lang">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                    </select>
+                    <span>to</span>
+                    <select id="target-lang">
+                        <option value="hi">Hindi</option>
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                    </select>
+                    <button id="send-btn" class="btn">Send & Translate</button>
+                </div>
+            </div>
+
+            <div id="messages-display">
+                <h3>Recent Messages</h3>
+                <ul id="messages-list">
+                    <!-- Messages will be loaded here via JavaScript -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
